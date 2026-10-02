@@ -1,1 +1,184 @@
 
+/* =========================================================
+   THE LYNCH TEAM SOP — CENTRAL STYLESHEET
+   ---------------------------------------------------------
+   Deep Navy (#0f2a4a) + Orange (#e8631a)
+   All site styling lives here. Edit this file to rebrand.
+   ========================================================= */
+
+/* ---------- 1. BRAND PALETTE ---------- */
+:root {
+  --lynch-navy:        #0f2a4a;
+  --lynch-navy-light:  #1e3a5f;
+  --lynch-orange:      #e8631a;
+  --lynch-orange-soft: #ff8a3d;
+  --lynch-bg:          #f8fafc;
+  --lynch-border:      #e2e8f0;
+  --lynch-text:        #1e293b;
+  --lynch-radius:      8px;
+}
+
+/* Wire Material's theme variables to our brand */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color:        var(--lynch-navy);
+  --md-primary-fg-color--light: var(--lynch-navy-light);
+  --md-primary-fg-color--dark:  #081a30;
+  --md-accent-fg-color:         var(--lynch-orange);
+  --md-typeset-a-color:         var(--lynch-orange);
+  --md-default-bg-color:        var(--lynch-bg);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color:        var(--lynch-navy-light);
+  --md-primary-fg-color--light: #2d4f7c;
+  --md-primary-fg-color--dark:  #081a30;
+  --md-accent-fg-color:         var(--lynch-orange-soft);
+  --md-typeset-a-color:         var(--lynch-orange-soft);
+}
+
+/* ---------- 2. TYPOGRAPHY ---------- */
+.md-typeset {
+  font-size: 0.78rem;
+  line-height: 1.7;
+}
+.md-typeset h1 {
+  color: var(--lynch-navy);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+[data-md-color-scheme="slate"] .md-typeset h1 {
+  color: #e2e8f0;
+}
+.md-typeset h2 {
+  color: var(--lynch-navy);
+  border-bottom: 3px solid var(--lynch-orange);
+  padding-bottom: 0.3rem;
+  margin-top: 2.2rem;
+  font-weight: 700;
+}
+[data-md-color-scheme="slate"] .md-typeset h2 {
+  color: #e2e8f0;
+}
+.md-typeset h3 {
+  color: var(--lynch-orange);
+  font-weight: 600;
+  margin-top: 1.6rem;
+}
+
+/* ---------- 3. HEADER & NAV ---------- */
+.md-header {
+  background-color: var(--lynch-navy);
+  box-shadow: 0 2px 8px rgba(15, 42, 74, .15);
+}
+.md-tabs {
+  background-color: var(--lynch-navy-light);
+}
+.md-nav__link--active,
+.md-nav__link:is(:focus, :hover) {
+  color: var(--lynch-orange) !important;
+}
+
+/* ---------- 4. CALLOUT / ADMONITION BOXES ---------- */
+.md-typeset .admonition,
+.md-typeset details {
+  border-radius: var(--lynch-radius);
+  border-left-width: 4px;
+  box-shadow: 0 1px 3px rgba(15, 42, 74, .08);
+}
+
+/* ---------- 5. TABLES ---------- */
+.md-typeset table:not([class]) {
+  border-radius: var(--lynch-radius);
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(15, 42, 74, .08);
+  border: 1px solid var(--lynch-border);
+}
+.md-typeset table:not([class]) th {
+  background: var(--lynch-navy);
+  color: #fff;
+  font-weight: 600;
+  padding: 0.7rem 1rem;
+}
+.md-typeset table:not([class]) tr:nth-child(even) {
+  background: #f1f5f9;
+}
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tr:nth-child(even) {
+  background: #1a2b42;
+}
+
+/* ---------- 6. CODE ---------- */
+.md-typeset code {
+  background: rgba(232, 99, 26, .1);
+  color: #b8480f;
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+}
+[data-md-color-scheme="slate"] .md-typeset code {
+  color: var(--lynch-orange-soft);
+}
+.md-typeset pre > code {
+  padding: 1rem;
+  background: var(--lynch-navy);
+  color: #e2e8f0;
+}
+
+/* ---------- 7. BUTTONS ---------- */
+.md-typeset .md-button {
+  border-radius: var(--lynch-radius);
+  border-color: var(--lynch-orange);
+  color: var(--lynch-orange);
+  font-weight: 600;
+  transition: all .2s ease;
+}
+.md-typeset .md-button:hover {
+  background: var(--lynch-orange);
+  color: #fff;
+  border-color: var(--lynch-orange);
+}
+.md-typeset .md-button--primary {
+  background: var(--lynch-orange);
+  color: #fff;
+  border-color: var(--lynch-orange);
+}
+
+/* ---------- 8. TASK LISTS ---------- */
+.md-typeset .task-list-item {
+  margin: 0.35rem 0;
+}
+.md-typeset .task-list-control .task-list-indicator::before {
+  background-color: var(--lynch-orange);
+}
+
+/* ---------- 9. HOMEPAGE CARD GRID ---------- */
+.md-typeset .grid.cards > ul > li,
+.md-typeset .grid.cards > ol > li {
+  border: 1px solid var(--lynch-border);
+  border-radius: var(--lynch-radius);
+  border-top: 3px solid var(--lynch-orange);
+  transition: all .2s ease;
+  box-shadow: 0 1px 3px rgba(15, 42, 74, .06);
+}
+.md-typeset .grid.cards > ul > li:hover,
+.md-typeset .grid.cards > ol > li:hover {
+  box-shadow: 0 6px 20px rgba(15, 42, 74, .15);
+  transform: translateY(-2px);
+  border-top-color: var(--lynch-navy);
+}
+.md-typeset .grid.cards .twemoji,
+.md-typeset .grid.cards .lg {
+  color: var(--lynch-orange);
+}
+
+/* ---------- 10. SEARCH & FOOTER ---------- */
+.md-search__input {
+  border-radius: var(--lynch-radius);
+}
+.md-footer {
+  background-color: var(--lynch-navy);
+}
+
+/* ---------- 11. PRINT ---------- */
+@media print {
+  .md-header, .md-sidebar, .md-footer, .md-tabs { display: none; }
+  .md-content { max-width: 100%; }
+}
