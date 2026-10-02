@@ -1,0 +1,81 @@
+site_name: The Lynch Team SOP
+site_description: Standard Operating Procedures for The Lynch Team
+site_url: https://jomelstampstaff.github.io/TheLynchTeamSOP/
+repo_url: https://github.com/jomelstampstaff/TheLynchTeamSOP
+repo_name: jomelstampstaff/TheLynchTeamSOP
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.action.edit
+    - content.action.view
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Marketing:
+      - Email Marketing - Weekly Blast: email-marketing-weekly-blast.md
+      - Social Media Video Publishing: social-media-video-publishing.md
+  - Systems:
+      - GoHighLevel Management: gohighlevel-management.md
+      - Website Management: website-management.md
+  - Templates:
+      - SOP Template: templates/sop-template.md
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/jomelstampstaff/TheLynchTeamSOP
+
+copyright: © The Lynch Team
