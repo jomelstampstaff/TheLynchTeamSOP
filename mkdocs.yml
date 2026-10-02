@@ -72,8 +72,7 @@ nav:
   - Systems:
       - GoHighLevel Management: gohighlevel-management.md
       - Website Management: website-management.md
-  - Templates:
-      - SOP Template: templates/sop-template.md
+ 
 
 extra:
   generator: false
