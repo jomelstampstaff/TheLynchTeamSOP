@@ -1,4 +1,4 @@
-# Email Marketing — Weekly Email Blast
+# Email Marketing - Weekly Email Blast
 
 **Frequency:** Weekly
 **Platform:** GoHighLevel (GHL)
@@ -15,14 +15,14 @@ new listing is available for promotion.
 !!! question "Decision Point"
     **Is there a qualifying new listing available?**
 
-    - **YES** → Follow **Path A: New Listing Email Blast**
-    - **NO** → Follow **Path B: Blog Email Blast**
+    - **YES** goes to **Path A: New Listing Email Blast**
+    - **NO** goes to **Path B: Blog Email Blast**
 
     Only one path is completed for each weekly email blast.
 
 ---
 
-## PATH A — New Listing Email Blast
+## PATH A - New Listing Email Blast
 
 ### 2. Pull Listing Information
 
@@ -54,20 +54,20 @@ Add the required action-based tracking tags:
 
 | Tag | Trigger / Action |
 |---|---|
-| `marketing email` | Contact opened email |
-| `email` | Contact unsubscribed |
-| `hardbounced` | Email hard bounced |
-| `softbounced` | Email soft bounced |
-| `click marketing` | Link clicked |
-| `fb` | Facebook link clicked |
-| `ig` | Instagram link clicked |
-| `linkedin` | LinkedIn link clicked |
+| marketing email | Contact opened email |
+| email | Contact unsubscribed |
+| hardbounced | Email hard bounced |
+| softbounced | Email soft bounced |
+| click marketing | Link clicked |
+| fb | Facebook link clicked |
+| ig | Instagram link clicked |
+| linkedin | LinkedIn link clicked |
 
 ### 6. Configure Batch Sending
 
 | Setting | Value |
 |---|---|
-| Receiver Tag | `Buyers` |
+| Receiver Tag | Buyers |
 | Batch Quantity | 300 contacts |
 | Batch Interval | 15 minutes |
 | Sender Name | (add required sender name) |
@@ -83,7 +83,7 @@ Add the required action-based tracking tags:
 4. Repeat revisions if necessary.
 5. Once the final email is approved, proceed with the batch email.
 
-### 8. Send & Monitor
+### 8. Send and Monitor
 
 1. Process the approved batch email for sending.
 2. Check email statistics periodically.
@@ -99,9 +99,11 @@ Add the required action-based tracking tags:
 
 ---
 
-## PATH B — Blog Email Blast
+## PATH B - Blog Email Blast
 
-> Use this path **only** when there is no qualifying new listing available for the weekly email blast.
+!!! info
+    Use this path **only** when there is no qualifying new listing available
+    for the weekly email blast.
 
 ### 2. Select Social Post
 
@@ -111,7 +113,7 @@ Add the required action-based tracking tags:
     - Seller
     - Other applicable audience
 
-### 3. Build & Publish Blog Post
+### 3. Build and Publish Blog Post
 
 1. Build a blog post based on the selected social media content.
 2. Develop the blog around the content's intent and target audience.
@@ -143,21 +145,21 @@ Add the required action-based tracking tags:
 
 | Tag | Trigger / Action |
 |---|---|
-| `marketing email` | Contact opened email |
-| `email` | Contact unsubscribed |
-| `hardbounced` | Email hard bounced |
-| `softbounced` | Email soft bounced |
-| `click marketing` | Blog Post link clicked |
-| `fb` | Facebook link clicked |
-| `ig` | Instagram link clicked |
-| `linkedin` | LinkedIn link clicked |
-| `website` | Website link clicked |
+| marketing email | Contact opened email |
+| email | Contact unsubscribed |
+| hardbounced | Email hard bounced |
+| softbounced | Email soft bounced |
+| click marketing | Blog Post link clicked |
+| fb | Facebook link clicked |
+| ig | Instagram link clicked |
+| linkedin | LinkedIn link clicked |
+| website | Website link clicked |
 
 ### 7. Configure Batch Sending
 
 | Setting | Value |
 |---|---|
-| Receiver Tag | `Buyers` |
+| Receiver Tag | Buyers |
 | Batch Quantity | 300 contacts |
 | Batch Interval | 15 minutes |
 | Sender Name | (add required sender name) |
@@ -172,7 +174,7 @@ Add the required action-based tracking tags:
 3. Update the email as needed.
 4. Once the final email is approved, proceed with the batch email.
 
-### 9. Send & Monitor
+### 9. Send and Monitor
 
 1. Process the approved batch email for sending.
 2. Check email statistics periodically.
@@ -190,7 +192,6 @@ flowchart TD
     B --> C{New listing available?}
     C -->|YES| D[PATH A: New Listing Email Blast]
     C -->|NO| E[PATH B: Blog Email Blast]
-
     D --> D1[MLS] --> D2[AI Draft] --> D3[Proofread] --> D4[GHL Email] --> D5[Photos] --> D6[Tracking] --> D7[Batch Setup] --> D8[Dimitrios Review] --> D9[Approval] --> D10[Send] --> D11[Monitor]
-
-    E --> E1[Select Social Post] --> E2[Build Blog + CTA] --> E3[Publish] --> E4[AI Email Draft] --> E5[Proofread] --> E6[GHL Email] --> E7[CTA / Thumbnail] --> E8[Tracking] --> E9[Batch Setup] --> E10[Dimitrios Review] --> E11[Approval] --> E12[Send] --> E13[Monitor]
+    E --> E1[Select Social Post] --> E2[Build Blog plus CTA] --> E3[Publish] --> E4[AI Email Draft] --> E5[Proofread] --> E6[GHL Email] --> E7[CTA and Thumbnail] --> E8[Tracking] --> E9[Batch Setup] --> E10[Dimitrios Review] --> E11[Approval] --> E12[Send] --> E13[Monitor]
+```
