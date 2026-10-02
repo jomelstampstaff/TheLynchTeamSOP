@@ -237,3 +237,26 @@ Add:
 ## 6. General GHL Quality Control
 
 Before considering a GHL task complete:
+
+- [ ] Confirm the requested process was followed.
+- [ ] Verify pages, forms, funnels, and automations function correctly.
+- [ ] Test new or modified automations before activation.
+- [ ] Confirm required SEO and metadata elements are present.
+- [ ] Confirm branding is consistent.
+- [ ] Confirm fallback processes exist for automations.
+- [ ] Review completed work with Dimitrios when approval is required.
+- [ ] Monitor newly activated automations and workflows for execution errors.
+
+---
+
+## 7. Escalation and Coordination
+
+Coordinate with Dimitrios when:
+
+- The intended process is unclear.
+- A new automation requires a workflow decision.
+- Page or funnel content is not defined.
+- A workflow requires a business-rule decision.
+- An automation repeatedly fails after troubleshooting.
+- A requested change would significantly alter an existing workflow.
+- Approval is required before publishing or activating a process.
